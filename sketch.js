@@ -48,22 +48,24 @@ function setup() {
   //frameRate(1)
   
   createCanvas(400, 400);
+  
+}
+function draw() {
+  
    time1=millis();
    for(let i=0;i<9999999;i++){
       let j=fsqrt(i);
    }
    time2=millis();
-console.log('fsqrt耗时毫秒',time2-time1,'误差',(fsqrt(2)-sqrt(2))/sqrt(2));
+//console.log('fsqrt耗时毫秒',time2-time1,'误差',(fsqrt(2)-sqrt(2))/sqrt(2));
 
    time3=millis();
    for(let i=0;i<9999999;i++){
-      let j=Math.sqrt(i);
+      let j=sqrt(i);
    }
    time4=millis();
   
-console.log('Math.sqrt原本耗时',time4-time3);
-}
-function draw() {
+//console.log('Math.sqrt原本耗时',time4-time3);
   textSize(20);
   background(255);
   text('fsqrt耗时',30,40);
