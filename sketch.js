@@ -61,7 +61,7 @@ function draw() {
 
    time3=millis();
    for(let i=0;i<9999999;i++){
-      let j=sqrt(i);
+      let j=Math.sqrt(i);
    }
    time4=millis();
   
